@@ -1,6 +1,7 @@
 c:\users\ryan\documents\visual studio 2013\Projects\DeckForGame\DeckForGame\bin\Debug\DeckForGame.exe.config
-C:\Users\Ryan\Documents\Visual Studio 2013\Projects\DeckForGame\DeckForGame\obj\Debug\DeckForGame.csprojResolveAssemblyReference.cache
 C:\Users\Ryan\Documents\Visual Studio 2013\Projects\DeckForGame\DeckForGame\bin\Debug\DeckForGame.exe
 C:\Users\Ryan\Documents\Visual Studio 2013\Projects\DeckForGame\DeckForGame\bin\Debug\DeckForGame.pdb
 C:\Users\Ryan\Documents\Visual Studio 2013\Projects\DeckForGame\DeckForGame\obj\Debug\DeckForGame.exe
 C:\Users\Ryan\Documents\Visual Studio 2013\Projects\DeckForGame\DeckForGame\obj\Debug\DeckForGame.pdb
+C:\Users\Ryan\Documents\Visual Studio 2013\Projects\DeckForGame\DeckForGame\obj\Debug\DeckForGame.csprojAssemblyReference.cache
+C:\Users\Ryan\Documents\Visual Studio 2013\Projects\DeckForGame\DeckForGame\obj\Debug\DeckForGame.csproj.CoreCompileInputs.cache

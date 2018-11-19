@@ -5,29 +5,90 @@ using System.Text;
 using System.Threading.Tasks;
 namespace DeckForGame
 {
-    enum SUIT { HEARTS=1, CLUBS=2, DIAMONDS=3, SPADES=4 };
-    enum VALUE { 
-        TWO=2, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT,
-        NINE, TEN, JACK, QUEEN, KING, ACE
+    public enum SUIT {
+        Hearts = 1,
+        Clubs = 2,
+        Diamonds = 3,
+        Spades = 4
     };
+    public enum VALUE { 
+        Two=2,
+        Three,
+        Four,
+        Five,
+        Six,
+        Seven,
+        Eight,
+        Nine,
+        Ten,
+        Jack,
+        Queen,
+        King,
+        Ace
+    };
+    public enum HAND
+    {
+        Pair = 1,
+        TwoPair = 2,
+        ThreeOfKind = 3,
+        Straight = 4,
+        Flush = 5,
+        FullHouse = 6,
+        FourOfKind = 7,
+        StraightFlush = 8,
+        RoyalFlush = 9
+    };
+
     class Card
     {
-        private char mySuit { get; set; }
-        private int myValue { get; set; }
-        public Card(char s, int v)
+        private char marked, suit;
+        private byte val;
+
+        //11, 12, 13, 14 = J, Q, K, A
+        public int MyValue
         {
-            mySuit = s; //should accept H C D S
-            myValue = v; //should accept 2-14
+            get => this.val;
+            set => val = (value >= 2 && value <= 14) ? (byte)value : (byte)2;
         }
-        public void setCard(char s, int v)
+        //H = Hearts
+        //C = Clubs
+        //D = Diamonds
+        //S = Spades
+        public char MySuit
         {
-            mySuit = s; //should accept H C D S
-            myValue = v; //should accept 2-14
+            get => this.suit;
+            set => suit = (value == 'H' || value == 'C' || value == 'D' || value == 'S') ? value : 'H';
         }
-        public string toString()
+        //N = Not marked
+        //P = Permanently marked
+        //T = Temporarily marked
+        public char Marked
         {
-            char[] chars = { '?', mySuit };
-            switch(myValue)
+            get => this.marked;
+            set => this.marked = (value == 'T' || value == 'P') ? value : 'N';
+        }
+
+        public Card(byte v, char s)
+        {
+            MySuit = s; //should accept H C D S
+            MyValue = v; //should accept 2-14
+            Marked = 'N';
+        }
+        public Card(byte v, char s, char m)
+        {
+            MySuit = s; //should accept H C D S
+            MyValue = v; //should accept 2-14
+            Marked = m; //should accept N P T
+        }
+        public void SetCard(byte v, char s)
+        {
+            MySuit = s; //should accept H C D S
+            MyValue = v; //should accept 2-14
+        }
+        public override string ToString()
+        {
+            char[] chars = new char[3];
+            switch(MyValue)
             {
                 case 2:
                     chars[0] = '2';
@@ -54,8 +115,10 @@ namespace DeckForGame
                     chars[0] = '9';
                     break;
                 case 10:
-                    chars[0] = 'X';
-                    break;
+                    chars[0] = '1';
+                    chars[1] = '0';
+                    chars[2] = MySuit;
+                    return new string(chars);
                 case 11:
                     chars[0] = 'J';
                     break;
@@ -71,7 +134,13 @@ namespace DeckForGame
                 default:
                     break;
             }
+            chars[1] = MySuit;
             return new string(chars);
+        }
+
+        public bool Equals(Card c)
+        {
+            return (this.MyValue == c.MyValue && this.MySuit == c.MySuit) ? true : false;
         }
     }
 }

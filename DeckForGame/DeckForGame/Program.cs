@@ -11,16 +11,14 @@ namespace DeckForGame
         static void Main(string[] args)
         {
             DeckOfCards deck = new DeckOfCards();
-            foreach(Card c in deck.myDeck){
-                Console.WriteLine(c.toString());
-            }
+            deck.PrintAll();
             Console.WriteLine("==========================");
-            deck.Riffle(true);
+            deck.Mark(14, 'S', 'P');
+            deck.Mark(13, 'S', 'P');
+            deck.Mark(11, 'S', 'T');
+            deck.Mark(9, 'C', 'T');
+            deck.PrintMarked(true);
             Console.WriteLine("==========================");
-            foreach (Card c in deck.myDeck)
-            {
-                Console.WriteLine(c.toString());
-            }
             Console.ReadLine();
         }
     }
