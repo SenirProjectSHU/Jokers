@@ -5,3 +5,17 @@ C:\Users\Ryan\Documents\Visual Studio 2013\Projects\DeckForGame\DeckForGame\obj\
 C:\Users\Ryan\Documents\Visual Studio 2013\Projects\DeckForGame\DeckForGame\obj\Debug\DeckForGame.pdb
 C:\Users\Ryan\Documents\Visual Studio 2013\Projects\DeckForGame\DeckForGame\obj\Debug\DeckForGame.csprojAssemblyReference.cache
 C:\Users\Ryan\Documents\Visual Studio 2013\Projects\DeckForGame\DeckForGame\obj\Debug\DeckForGame.csproj.CoreCompileInputs.cache
+C:\Users\Ryan\Documents\GitHub\Jokers\DeckForGame\DeckForGame\bin\Debug\DeckForGame.exe.config
+C:\Users\Ryan\Documents\GitHub\Jokers\DeckForGame\DeckForGame\bin\Debug\DeckForGame.exe
+C:\Users\Ryan\Documents\GitHub\Jokers\DeckForGame\DeckForGame\bin\Debug\DeckForGame.pdb
+C:\Users\Ryan\Documents\GitHub\Jokers\DeckForGame\DeckForGame\obj\Debug\DeckForGame.csprojAssemblyReference.cache
+C:\Users\Ryan\Documents\GitHub\Jokers\DeckForGame\DeckForGame\obj\Debug\DeckForGame.csproj.CoreCompileInputs.cache
+C:\Users\Ryan\Documents\GitHub\Jokers\DeckForGame\DeckForGame\obj\Debug\DeckForGame.exe
+C:\Users\Ryan\Documents\GitHub\Jokers\DeckForGame\DeckForGame\obj\Debug\DeckForGame.pdb
+C:\Users\Ryan\Documents\Visual Studio 2017\DeckForGame\DeckForGame\bin\Debug\DeckForGame.exe.config
+C:\Users\Ryan\Documents\Visual Studio 2017\DeckForGame\DeckForGame\bin\Debug\DeckForGame.exe
+C:\Users\Ryan\Documents\Visual Studio 2017\DeckForGame\DeckForGame\bin\Debug\DeckForGame.pdb
+C:\Users\Ryan\Documents\Visual Studio 2017\DeckForGame\DeckForGame\obj\Debug\DeckForGame.csprojAssemblyReference.cache
+C:\Users\Ryan\Documents\Visual Studio 2017\DeckForGame\DeckForGame\obj\Debug\DeckForGame.csproj.CoreCompileInputs.cache
+C:\Users\Ryan\Documents\Visual Studio 2017\DeckForGame\DeckForGame\obj\Debug\DeckForGame.exe
+C:\Users\Ryan\Documents\Visual Studio 2017\DeckForGame\DeckForGame\obj\Debug\DeckForGame.pdb

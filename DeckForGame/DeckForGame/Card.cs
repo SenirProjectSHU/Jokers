@@ -5,51 +5,18 @@ using System.Text;
 using System.Threading.Tasks;
 namespace DeckForGame
 {
-    public enum SUIT {
-        Hearts = 1,
-        Clubs = 2,
-        Diamonds = 3,
-        Spades = 4
-    };
-    public enum VALUE { 
-        Two=2,
-        Three,
-        Four,
-        Five,
-        Six,
-        Seven,
-        Eight,
-        Nine,
-        Ten,
-        Jack,
-        Queen,
-        King,
-        Ace
-    };
-    public enum HAND
-    {
-        Pair = 1,
-        TwoPair = 2,
-        ThreeOfKind = 3,
-        Straight = 4,
-        Flush = 5,
-        FullHouse = 6,
-        FourOfKind = 7,
-        StraightFlush = 8,
-        RoyalFlush = 9
-    };
-
     class Card
     {
         private char marked, suit;
         private byte val;
 
         //11, 12, 13, 14 = J, Q, K, A
-        public int MyValue
+        public byte MyValue
         {
             get => this.val;
-            set => val = (value >= 2 && value <= 14) ? (byte)value : (byte)2;
+            set => val = (value >= 2 && value <= 14) ? value : (byte)2;
         }
+
         //H = Hearts
         //C = Clubs
         //D = Diamonds
@@ -59,6 +26,7 @@ namespace DeckForGame
             get => this.suit;
             set => suit = (value == 'H' || value == 'C' || value == 'D' || value == 'S') ? value : 'H';
         }
+
         //N = Not marked
         //P = Permanently marked
         //T = Temporarily marked

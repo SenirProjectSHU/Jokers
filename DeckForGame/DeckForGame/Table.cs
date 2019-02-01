@@ -23,7 +23,6 @@ namespace DeckForGame
                 int temp = Pot;
                 Pot = Pot % SplitBetween;
                 return (int)Math.Floor((double)temp / (double)SplitBetween);
-
             }
         }
     }
